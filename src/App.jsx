@@ -1,17 +1,16 @@
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Food from './Food.jsx';
+import Header from './Header/Header.jsx';
+import Footer from './Footer/Footer.jsx';
+import Food from './Food/Food.jsx';
+import Card from './Card/Card.jsx';
+import Button from './Button/Button.jsx';
+import Student from './Student/Student.jsx';
 
 
 function App() {
 
   return(
     <>
-      <Header/>
-
-      <Food/>
-
-      <Footer/>
+    <Student name="Spongebob" age={30} isStudent="Yes"/>    
     </>
   );
 
