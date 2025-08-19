@@ -4,7 +4,7 @@ import Food from './Food/Food.jsx';
 import Card from './Card/Card.jsx';
 import Button from './Button/Button.jsx';
 import Student from './Student/Student.jsx';
-import UserGreeting from './UserGreeting.jsx';
+import UserGreeting from './UserGreeting/UserGreeting.jsx';
 import List from './List.jsx'
 
 
@@ -20,19 +20,19 @@ function App() {
 
 
 
-  const Veggies = [
-                    {id: 6, name: "apple", calories: 95}, 
-                    {id: 7, name: "orange", calories: 45}, 
-                    {id: 8, name: "banana", calories: 105}, 
-                    {id: 9, name: "coconut", calories: 159}, 
-                    {id: 10, name: "pineapple", calories: 37}
+  const veggies = [
+                    {id: 6, name: "potatoes", calories: 110}, 
+                    {id: 7, name: "celery", calories: 15}, 
+                    {id: 8, name: "carrots", calories: 25}, 
+                    {id: 9, name: "corn", calories: 63}, 
+                    {id: 10, name: "broccoli", calories: 50}
                 ];
 
 
   return(
     <>
-    <List items={fruits} category="Fruits"/>
-    <List items={Veggies} category="Veggies"/>
+    { fruits.length > 0 && <List items={fruits} category="Fruits"/>}
+    { veggies.length > 0 && <List items={veggies} category="Veggies"/>}
     </>
   );
 
